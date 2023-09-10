@@ -1,6 +1,5 @@
 package doublylinkedlist
 
 func (dll *DoublyLinkedList[DT]) Length() int {
-	// TODO: implement
-	return 0
+	return dll.length
 }
