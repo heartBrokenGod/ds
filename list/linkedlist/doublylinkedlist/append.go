@@ -18,6 +18,7 @@ func (dll *DoublyLinkedList[DT]) Append(item DT) error {
 	newNode.Prev = dll.tail
 	dll.tail.Next = newNode
 	dll.tail = newNode
+	dll.length++
 
 	return nil
 }
