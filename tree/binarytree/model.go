@@ -17,11 +17,13 @@ func NewBinaryTreeNode[DT datatype.DataType](item DT) *BinaryTreeNode[DT] {
 }
 
 type BinaryTree[DT datatype.DataType] struct {
-	rootNode *BinaryTreeNode[DT]
+	rootNode      *BinaryTreeNode[DT]
+	traversalType TraversalType
 }
 
 func New[DT datatype.DataType]() *BinaryTree[DT] {
 	return &BinaryTree[DT]{
-		rootNode: nil,
+		rootNode:      nil,
+		traversalType: PreOrderTraversal,
 	}
 }
