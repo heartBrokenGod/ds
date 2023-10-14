@@ -6,4 +6,5 @@ const (
 	PreOrderTraversal TraversalType = iota
 	InOrderTraversal
 	PostOrderTraversal
+	LevelOrderTraversal
 )
