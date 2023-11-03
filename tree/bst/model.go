@@ -7,6 +7,14 @@ import (
 
 type BSTNode[DT datatype.DataType] binarytree.BinaryTreeNode[DT]
 
+func NewBSTNode[DT datatype.DataType](item DT) *BSTNode[DT] {
+	return &BSTNode[DT]{
+		Item:      item,
+		LeftNode:  nil,
+		RightNode: nil,
+	}
+}
+
 type BST[DT datatype.DataType] struct {
 	bt *binarytree.BinaryTree[DT]
 }
